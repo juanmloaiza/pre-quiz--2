@@ -5,3 +5,8 @@ print(matriz_4d.size)
 
 #Copia en 3d
 matriz_3d= matriz_4d.copy()[:,:,:,0:1]
+
+#Atributos de la matriz
+print("Dimensiones:" , matriz_3d.shape)
+print("Tamaño:" , matriz_3d.size)
+print("Tipo de datos:" , matriz_3d.type)
