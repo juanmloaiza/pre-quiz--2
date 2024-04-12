@@ -30,3 +30,25 @@ def cargar_matriz(path):
 def cargar_csv(path):
     df=pd.read_csv(path)
     return df 
+
+#Operaciones básicas
+def suma(matriz, axis=None):
+    return np.sum(matriz, axis=axis)
+
+def resta(matriz1, matriz2):
+    return matriz1-matriz2
+
+def multiplicacion(matriz1,matriz2):
+    return np.multiply(matriz1,matriz2)
+
+def division(matriz1,matriz2):
+    return np.divide(matriz1,matriz2)
+
+def logaritmo(matriz):
+    return np.log(matriz)
+
+def promedio(matriz, axis=None):
+    return np.mean(matriz,axis=axis)
+
+def desviacion_estandar(matriz,axis=None):
+    return np.std(matriz,axis=axis)
