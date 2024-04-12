@@ -20,3 +20,13 @@ def matriz_a_dataframe(matriz):
     df= pd.FataFrame(matriz)
     return df
 de_matriz= matriz_a_dataframe(matriz_2d)
+
+#cargar csv y .mat
+import scipy.io as sio
+def cargar_matriz(path):
+    matriz= sio.loadmat(path)
+    return matriz
+
+def cargar_csv(path):
+    df=pd.read_csv(path)
+    return df 
