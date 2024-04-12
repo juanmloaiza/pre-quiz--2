@@ -14,3 +14,9 @@ print("Tipo de datos:" , matriz_3d.type)
 #Modificación y pasar a 2d
 matriz_2d= matriz_3d.reshape(-1,matriz_3d.shape[-1])
 
+#convertir la matriz
+import pandas as pd
+def matriz_a_dataframe(matriz):
+    df= pd.FataFrame(matriz)
+    return df
+de_matriz= matriz_a_dataframe(matriz_2d)
